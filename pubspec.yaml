@@ -1,0 +1,36 @@
+name: lgmmart_app
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+# Add your dependencies here
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # For icons (replaces Font Awesome)
+  font_awesome_flutter: ^10.7.0
+  another_carousel_pro: ^1.0.1
+
+  # For sliders and carousels (replaces Swiper.js & Bootstrap Carousel)
+  #carousel_slider: ^4.2.1
+
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# Add your assets and fonts here
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    # If you have images, like a logo, put them in assets/images/
+    # e.g. - assets/images/logo.png
