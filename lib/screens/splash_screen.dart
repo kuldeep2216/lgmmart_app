@@ -2,7 +2,7 @@
 
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:lgmmart_app/screens/home_screen.dart';
+import 'package:lgmmart_app/screens/main_screen.dart';
 import 'package:lgmmart_app/utils/app_theme.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,11 +22,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _navigateToHome() {
     // Wait for 3 seconds, then navigate away.
-    Timer(const Duration(seconds: 30), () {
+    Timer(const Duration(seconds: 3), () {
       // Use pushReplacement to prevent the user from going back to the splash screen.
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => const MainScreen()),
       );
     });
   }

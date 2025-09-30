@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lgmmart_app/screens/main_screen.dart';
-// ignore: unused_import
 import 'package:lgmmart_app/screens/splash_screen.dart';
 import 'package:lgmmart_app/services/auth_service.dart';
 import 'package:lgmmart_app/services/cart_service.dart';
@@ -28,7 +26,7 @@ class MyApp extends StatelessWidget {
       title: 'LGMMart',
       theme: AppTheme.lightTheme,
       // The app now ALWAYS starts at the HomeScreen
-      home: const MainScreen(),
+      home: const SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

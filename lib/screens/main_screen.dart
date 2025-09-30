@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lgmmart_app/screens/category_screen.dart';
-import 'package:lgmmart_app/screens/checkour_screen.dart';
+import 'package:lgmmart_app/screens/checkout_screen.dart';
 import 'package:lgmmart_app/screens/home_screen.dart';
 import 'package:lgmmart_app/screens/profile_screen.dart';
 import 'package:lgmmart_app/services/auth_service.dart';
+import 'package:lgmmart_app/screens/all_categories_screen.dart';
 import 'package:provider/provider.dart';
 import 'login_screen.dart';
 
@@ -22,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
   // This is the list of screens that the navigation bar will switch between.
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    CategoryScreen(), // For now, this is a single category, but it represents the tab
+    AllCategoriesScreen(),
     CheckoutScreen(),
     AccountWrapper(), // A special widget to handle login/profile logic
   ];

@@ -23,11 +23,8 @@ class ProductCard extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => ProductDetailScreen(
-                  // We'll need to update ProductDetailScreen to accept a Product object next
-                  // This part is a placeholder for now
-                  title: product.title,
-                  imageUrl: product.imageUrl,
-                  price: product.price,
+                  // THIS IS THE CORRECTED LINE
+                  product: product,
                 ),
               ),
             );
@@ -43,7 +40,7 @@ class ProductCard extends StatelessWidget {
                   children: [
                     Image.network(
                       product.imageUrl,
-                      height: 120,
+                      height: 150,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
@@ -81,7 +78,7 @@ class ProductCard extends StatelessWidget {
                           children: [
                             Container(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 6, vertical: 2),
+                                  horizontal: 4, vertical: 8),
                               decoration: BoxDecoration(
                                 color: AppColors.light.withOpacity(0.8),
                                 borderRadius: BorderRadius.circular(4),

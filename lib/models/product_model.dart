@@ -1,3 +1,13 @@
+// lib/models/product_model.dart
+
+// An enum is a safe and clean way to define a list of options.
+enum ProductCategory {
+  fruitsAndVeg,
+  dairyAndBreads,
+  drinksAndJuices,
+  snacksAndMunchies
+}
+
 class Product {
   final String id;
   final String title;
@@ -6,6 +16,7 @@ class Product {
   final double originalPrice;
   final String offer;
   final String deliveryTime;
+  final ProductCategory category; // <-- THIS IS THE NEW, REQUIRED LINE
 
   Product({
     required this.id,
@@ -15,5 +26,6 @@ class Product {
     required this.originalPrice,
     required this.offer,
     required this.deliveryTime,
+    required this.category, // <-- THIS IS THE NEW, REQUIRED LINE
   });
 }

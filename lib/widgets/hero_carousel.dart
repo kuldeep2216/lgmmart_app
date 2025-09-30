@@ -86,7 +86,7 @@ class HeroCarousel extends StatelessWidget {
 
     // Use a SizedBox to give the carousel a specific size
     return SizedBox(
-      height: 250,
+      height: 225,
       width: double.infinity,
       child: AnotherCarousel(
         images: imageWidgets, // Pass the list of widgets here
